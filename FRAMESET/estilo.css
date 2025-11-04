@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    background-color: #f14c00; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logoh {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+nav {
+    background-image: url(IMAGENS/nav.png); 
+    height: 800px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 12px 0;
+}
+
+nav ul li a {
+   
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff3c00;
+}
+
+article {
+    background-image: url(IMAGENS/fundoc.jpg);
+    padding: 20px;
+    min-height: 400px;
+    text-align: center;
+    color: rgb(100, 28, 0);
+    background-size: cover;
+    background-position: center;
+}
+
+article img {
+    width: 1000px;
+    height: 280px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border: 2px solid #ffb380;
+    box-shadow: 
+        0 0 10px rgb(255, 255, 255),
+        0 0 20px rgb(255, 255, 255),
+        0 0 40px rgb(255, 255, 255),
+        0 0 80px rgb(255, 255, 255);
+    object-fit: cover;
+}
+
+footer {
+    background-color: #ffcc80; 
+    color: #4e342e;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.cadastro { 
+    background: url(IMAGENS/fundo.png);
+}
+
+.form {
+    background-color: #ff7b00;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.h2 {
+    background-color: #ff7b00; 
+    color: #36231e;
+    text-align: justify;
+    padding: 15px;
+    font-size: 30px;  
+}
+
+.galeria-destaques {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    padding: 30px 0;
+}
+
+.destaque {
+    color: #ffffff;
+    background-color: #ff7b00;
+    border-radius: 20px;
+    width: 220px; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+    position: relative;
+    margin: 0; 
+}
+
+.destaque:hover { 
+    transform: scale(1.05);
+}
+
+.destaque img {
+    height: 180px; 
+    width: 180px;
+    border-radius: 50%; 
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    object-fit: cover; 
+    display: block; 
+    margin: 10px auto; 
+}
+
+.destaque h2 {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+    color: #ffffff;
+}
+
+.destaque a {
+    text-decoration: none;
+    color: #8a3200;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.destaque a:hover {
+    color: rgb(255, 210, 172);
+}
+
+.destaque:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    border-radius: 25px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}

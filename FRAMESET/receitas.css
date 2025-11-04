@@ -1,0 +1,121 @@
+:root {
+  --text: #333;
+  --card-bg: #ffffff;
+  --shadow: rgba(0,0,0,0.10);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 22px 16px;
+}
+
+body.salgada header {
+  background: linear-gradient(135deg, #ff7300, #d35400);
+}
+
+body.doce header {
+  background: linear-gradient(135deg, #ff9ad0, #c71585);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 26px auto;
+  background: var(--card-bg);
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px var(--shadow);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+h2 {
+  margin: 18px 0 10px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  border-left: 6px solid;
+}
+
+body.salgada h2 {
+  color: #d35400;
+  border-color: #ff7300;
+}
+
+body.doce h2 {
+  color: #c71585;
+  border-color: #ff9ad0;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+
+ul li, ol li {
+  margin-bottom: 8px;
+}
+
+.links {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+body.salgada a.btn {
+  background: #d35400;
+}
+
+body.doce a.btn {
+  background: #c71585;
+}
+
+a.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+@media (max-width: 640px) {
+  .recipe-image {
+    height: 220px;
+  }
+  main {
+    margin: 16px;
+    padding: 16px;
+  }
+}

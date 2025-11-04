@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(IMAGENS/fundod.png);
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #ff7f50, #ffb07c); 
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  border-bottom: 2px solid #ffb07c;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: #fff3e6;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.05);
+}
+
+.card:hover h3 {
+  background: #ff4400;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .grid {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
